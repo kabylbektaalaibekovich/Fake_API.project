@@ -1,0 +1,50 @@
+
+#section{
+    margin-top: 132px;
+    width: 100%;
+}
+video{
+    width: 100%;
+}
+
+.human{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+ }
+
+.man:hover{
+   
+        scrollbar-width: none;
+        overflow: hidden;
+        border-radius: 15px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+        }
+      
+    .img:hover{
+     
+        transform: scale(1.1);
+        transition: 1s;
+    }
+
+    .woman:hover{
+   
+        scrollbar-width: none;
+        overflow: hidden;
+        border-radius: 15px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+        }
+      
+    .img:hover{
+     
+        transform: scale(1.1);
+        transition: 1s;
+    } 

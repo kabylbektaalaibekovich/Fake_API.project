@@ -1,0 +1,161 @@
+/* Основные стили для таблицы корзины */
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.cart-table th,
+.cart-table td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb; /* светло-серая граница */
+}
+
+.cart-table th {
+    background-color: #f3f4f6; /* светлый фон для заголовков */
+    font-weight: bold;
+    font-size: 1.125rem; /* размер шрифта для заголовков */
+}
+
+.cart-table td {
+    font-size: 1rem; /* размер шрифта для содержимого */
+}
+
+/* Стили для строк */
+.table-row {
+    transition: background-color 0.3s ease;
+}
+
+.table-row:hover {
+    background-color: #f9fafb; /* эффект при наведении */
+}
+
+.table-row:nth-child(even) {
+    background-color: #f9f9f9; /* светлый фон для четных строк */
+}
+
+.table-row:nth-child(odd) {
+    background-color: #ffffff; /* белый фон для нечетных строк */
+}
+
+/* Стили для кнопок управления количеством */
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.quantity-control button {
+    background-color: #3b82f6; /* синий фон */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.quantity-control button:hover {
+    background-color: #2563eb; /* более темный синий при наведении */
+}
+
+/* Стили для кнопки удаления */
+.delete-button {
+    background: none;
+    border: none;
+    color: #ef4444; /* красный цвет */
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.delete-button:hover {
+    color: #dc2626; /* более темный красный при наведении */
+}
+
+/* Основные стили для формы отправки */
+.submit-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.submit-button {
+    background-color: #3b82f6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #2563eb; /* более темный синий при наведении */
+}
+
+/* Стили для полей ввода */
+.input-field {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Адаптация для экранов */
+@media (max-width: 1020px) {
+    .cart-table th,
+    .cart-table td {
+        padding: 12px;
+        font-size: 0.9rem; /* уменьшенный размер шрифта */
+    }
+}
+
+@media (max-width: 767px) {
+    .cart-table {
+        display: block; /* делаем таблицу блочной */
+        overflow-x: auto; /* добавляем прокрутку для маленьких экранов */
+    }
+
+    .cart-table th,
+    .cart-table td {
+        width: 400px;
+        display: block; 
+        text-align: left; 
+        position: relative; 
+    }
+
+    .cart-table th::after,
+    .cart-table td::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: #e5e7eb;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .cart-table th,
+    .cart-table td {
+        padding: 8px;
+        font-size: 0.75rem; /* еще более маленький размер шрифта */
+    }
+}

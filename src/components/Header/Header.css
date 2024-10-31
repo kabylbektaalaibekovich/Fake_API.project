@@ -1,0 +1,407 @@
+
+.nav-menu {
+    position:fixed;
+    right: 0;
+    top: 90px;
+    z-index: 9;
+    width: 100px;
+    height: auto;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+header{
+
+
+h1{
+    font-family: sans-serif;
+    font-weight:900;
+    font-size: 30px;
+}
+}
+.header{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.183);
+    -webkit-box-shadow: -5px -2px 22px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -5px -2px 22px -3px rgba(0,0,0,0.75);
+    box-shadow: -5px -2px 22px -3px rgba(0,0,0,0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    padding: 35px;
+    background: rgb(206, 205, 205);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+ .men{
+    color: black;
+    font-size: 25px;
+    font-family: sans-serif;
+ }
+
+ .women{
+    color: black;
+    font-size: 25px;
+    font-family: sans-serif;
+ }
+ .menuBtn{
+    border: none;
+    font-size: 30px;
+    display: none;
+ }
+}
+
+.head-input{
+    position: relative;
+    display: flex;  
+    align-items: center;
+    input{
+        padding: 10px 20px ;
+        width: 500px;
+        height: 35px;
+        border: none ;
+        outline: none;
+        background:#fff;
+    }::placeholder{
+        color: black;
+    }
+    button{
+        position: absolute;
+        left: 470px;
+        border: none;
+        background: none;
+        font-size: 22px;
+    }
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.wishlist{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    button{
+        font-size: 32px;
+        background: none;
+        border: none;
+    }
+    .badge {
+        position: absolute;
+        bottom: 50px;
+        right: 1px;
+        width: 21px;
+        height: 21px;
+        background-color:red; /* или любой другой оттенок */
+        color: #e2e8f0;
+        border-radius: 50%;
+        font-size: 14px;
+        text-align: center;
+        line-height: 21px;
+    }
+    h6{
+        font-size: 15px;
+        font-family: sans-serif;
+    }
+}
+.cart{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    button{
+        font-size: 32px;
+        background: none;
+        border: none;
+    }
+    .badge1{
+        position: absolute;
+    bottom: 50px;
+    right: -4px;
+    width: 21px;
+    height: 21px;
+    background-color:red; /* или любой другой оттенок */
+    color: #e2e8f0;
+    border-radius: 50%;
+    font-size: 14px;
+    text-align: center;
+    line-height: 21px;
+
+    }
+    h6{
+        font-size: 15px;
+        font-family: sans-serif; 
+    }
+}
+.admin{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    button{
+        font-size: 32px;
+        background: none;
+        border: none;
+    }
+    h6{
+        font-size: 15px;
+        font-family: sans-serif;
+    }
+}
+.home{
+    border: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    button{
+        font-size:32px;
+        background: none;
+        border: none;
+    }
+    h6{
+        font-size: 15px;
+        font-family: sans-serif;
+    }
+}
+
+
+
+
+
+@media(max-width:1020px){
+    .header{
+        .menuBtn{
+            display: flex;
+        }
+    }
+    .liderFashion{
+            font-size: 20px;
+    }
+    .men , .women{
+        display: none;
+    }
+   
+    .head-input{
+      
+        position: relative;
+        display: flex;  
+        align-items: center;
+        input{
+            padding: 10px 20px ;
+            width: 300px;
+            height: 35px;
+            border: none ;
+            outline: none;
+            background:#fff;
+        }::placeholder{
+            color: black;
+        }
+        button{
+            position: absolute;
+            left: 270px;
+            border: none;
+            background: none;
+            font-size: 22px;
+        }
+    }
+    
+nav{
+    display: none;
+}
+}
+
+
+
+
+
+@media(max-width:767px){
+    .header{
+        .menuBtn{
+            display: flex;
+            font-size: 17px;
+        }
+    }
+    .liderFashion{
+            font-size: 12px;
+    }
+    .men , .women{
+        display: none;
+    }
+   
+    .head-input{
+      
+        position: relative;
+        display: flex;  
+        align-items: center;
+        input{
+            padding: 10px 20px ;
+            width: 150px;
+            height: 20px;
+            border: none ;
+            outline: none;
+            background:#fff;
+            padding: 0px 0px 7px 10px;
+
+        }::placeholder{
+            color: black;
+            font-size: 10px;
+        }
+        button{
+            
+            position: absolute;
+            left: 130px;
+            border: none;
+            background: none;
+            font-size: 12px;
+        }
+    }
+    
+nav{
+    display: none;
+}
+}
+
+
+
+
+@media(max-width:1020px){
+    .header{
+        .menuBtn{
+            display: flex;
+        }
+    }
+    .liderFashion{
+            font-size: 20px;
+    }
+    .men , .women{
+        display: none;
+    }
+   
+    .head-input{
+      
+        position: relative;
+        display: flex;  
+        align-items: center;
+        input{
+            padding: 10px 20px ;
+            width: 300px;
+            height: 35px;
+            border: none ;
+            outline: none;
+            background:#fff;
+        }::placeholder{
+            color: black;
+        }
+        button{
+            position: absolute;
+            left: 270px;
+            border: none;
+            background: none;
+            font-size: 22px;
+        }
+    }
+    
+nav{
+    display: none;
+}
+}
+
+
+@media(max-width:767px){
+    .header{
+        .menuBtn{
+            display: flex;
+            font-size: 20px;
+        }
+    }
+    .liderFashion{
+            font-size: 16px;
+    }
+    .men , .women{
+        display: none;
+    }
+   
+    .head-input{
+      
+        position: relative;
+        display: flex;  
+        align-items: center;
+        input{
+            padding: 10px 20px ;
+            width: 150px;
+            height: 25px;
+            border: none ;
+            outline: none;
+            background:#fff;
+            padding: 0px 0px 7px 10px;
+
+        }::placeholder{
+            color: black;
+            font-size:8px;
+        }
+        button{
+            
+            position: absolute;
+            left: 105px;
+            border: none;
+            background: none;
+            font-size: 12px;
+        }
+    }
+    
+nav{
+    display: none;
+}
+}
+
+
+@media(max-width:320px){
+    .header{
+        .menuBtn{
+            display: flex;
+            font-size: 15px;
+        }
+    }
+    .liderFashion{
+            font-size: 10px;
+    }
+    .men , .women{
+        display: none;
+    }
+   
+    .head-input{
+      
+        position: relative;
+        display: flex;  
+        align-items: center;
+        input{
+            padding: 10px 20px ;
+            width: 105px;
+            height: 18px;
+            border: none ;
+            outline: none;
+            background:#fff;
+            padding: 0px 0px 7px 2px;
+
+        }::placeholder{
+            color: black;
+            font-size:8px;
+        }
+        button{
+            
+            position: absolute;
+            left: 95px;
+            border: none;
+            background: none;
+            font-size: 10px;
+        }
+    }
+    
+nav{
+    display: none;
+}
+}

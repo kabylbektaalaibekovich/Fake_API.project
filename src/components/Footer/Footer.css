@@ -1,0 +1,7 @@
+/* bg-gray-800 text-white py-6 my-[100px] */
+.footer{
+  
+    background-color: #2d3748; 
+    color: white;
+    margin-top: 100px;
+}
